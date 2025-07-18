@@ -9,12 +9,16 @@
 
 .homepage-container {
 	padding-top: 25px;
+	color: var(--secondary-color);
+	background-color: var(--background-color);
+	animation: fadeIn 1s ease-in;
 }
 
 .homepage-first-area {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .homepage-first-area-left-side {
@@ -25,10 +29,19 @@
 
 .homepage-title {
 	width: 85% !important;
+	font-size: 48px;
+	color: var(--primary-color);
+	text-shadow: 0 0 10px var(--primary-color);
+	animation: slideUp 0.8s ease-in-out;
 }
 
 .homepage-subtitle {
 	width: 85% !important;
+	color: var(--tertiary-color);
+	font-size: 18px;
+	line-height: 1.8;
+	margin-top: 10px;
+	animation: fadeIn 1.2s ease-in-out;
 }
 
 .homepage-first-area-right-side {
@@ -39,16 +52,27 @@
 .homepage-image-container {
 	width: 370px;
 	height: 370px;
+	background: linear-gradient(145deg, var(--primary-color), var(--accent-color));
+	border-radius: 20px;
+	box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+	padding: 10px;
+	transition: transform 0.3s ease;
+}
+
+.homepage-image-container:hover {
+	transform: scale(1.05);
 }
 
 .homepage-image-wrapper {
 	overflow: hidden;
-	border-radius: 10%;
-	transform: rotate(3deg);
+	border-radius: 15px;
+	transform: rotate(0deg);
 }
 
 .homepage-image-wrapper img {
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .homepage-socials {
@@ -61,90 +85,101 @@
 .homepage-social-icon {
 	padding-right: 20px;
 	font-size: 25px;
-	transition: color 0.2s ease-in-out;
 	color: var(--secondary-color);
+	transition: transform 0.3s, color 0.3s;
 }
 
 .homepage-social-icon:hover {
-	color: var(--primary-color);
+	color: var(--accent-color);
+	transform: scale(1.2);
 }
 
 .homepage-after-title {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 40px;
+	margin-top: 60px;
 }
 
 .homepage-projects {
-	flex-basis: 300px;
+	flex-basis: 100%;
 	padding-top: 40px;
 }
 
 .homepage-articles {
-	flex-basis: 900px;
-	padding-top: 30px;
-	margin-left: -30px;
-}
-
-.homepage-article {
-	padding-bottom: 5px;
+	flex-basis: 48%;
 }
 
 .homepage-works {
-	flex-basis: 600px;
-	padding-top: 30px;
+	flex-basis: 48%;
 }
 
+.homepage-article {
+	padding-bottom: 15px;
+	background-color: #1a1a1a;
+	padding: 20px;
+	border-radius: 12px;
+	box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+	transition: transform 0.2s;
+}
+
+.homepage-article:hover {
+	transform: translateY(-5px);
+}
+
+.page-footer {
+	border-top: 2px solid var(--accent-color);
+	margin-top: 60px;
+	padding-top: 30px;
+	text-align: center;
+	color: var(--tertiary-color);
+}
+
+/* Media Queries */
 @media (max-width: 1024px) {
 	.homepage-first-area {
 		flex-direction: column;
 	}
 
 	.homepage-first-area-left-side {
-		display: flex;
-		flex-direction: column; /* Changed: set direction to column */
-		align-items: flex-start;
 		width: 100%;
 		order: 2;
-	}
-
-	.homepage-title {
-		width: 100% !important;
-		margin-top: 20px;
-		order: 2;
-	}
-
-	.homepage-subtitle {
-		width: 100% !important;
-		margin-top: 10px;
-		order: 3;
 	}
 
 	.homepage-first-area-right-side {
 		width: 100%;
 		order: 1;
+		justify-content: center;
 	}
 
 	.homepage-image-container {
-		padding-top: 50px;
-		padding-bottom: 50px;
-		margin-left: 10px;
-		order: 1;
+		margin: 40px 0;
 	}
 
-	.homepage-after-title {
-		flex-direction: column;
-	}
-
-	.homepage-projects {
-		flex-basis: auto;
-	}
-
-	.homepage-articles {
-		flex-basis: auto;
-	}
-
+	.homepage-articles,
 	.homepage-works {
-		flex-basis: auto;
-		margin-left: -25px;
-		margin-right: -25px;
+		flex-basis: 100%;
+		margin-left: 0;
+	}
+}
+
+/* Animations */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(30px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
 	}
 }

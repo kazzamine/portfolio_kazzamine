@@ -1,18 +1,42 @@
 :root {
-	/* Dark Theme Colors */
-	--background-color: #0d0d0d;
-	--primary-color: #1f1f1f;
-	--secondary-color: #00ffc3; /* Neon Mint */
-	--tertiary-color: #999;
-	--text-color: #ffffff;
-	--accent-color: #ff00ff; /* Neon Pink for highlights */
-	--card-bg: #1a1a1a;
-	--card-hover: #2e2e2e;
+	--primary-color: #00ffff; /* Neon Cyan */
+	--secondary-color: #ffffff; /* Light text */
+	--tertiary-color: #888888; /* Muted gray for details */
+
+	--background-color: #0d0d0d; /* Deep black */
+	--accent-color: #ff00ff; /* Neon pink/purple */
+
+	--main-font: 'Inter', sans-serif;
+	--secondary-font: 'Space Grotesk', monospace;
 }
+
 
 body {
 	background-color: var(--background-color);
-	color: var(--text-color);
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	transition: background 0.3s, color 0.3s;
+	color: var(--secondary-color);
+	font-family: var(--main-font);
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
 }
+
+a {
+	color: var(--primary-color);
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+	color: var(--accent-color);
+	text-shadow: 0 0 5px var(--accent-color);
+}
+
+@keyframes neon-glow {
+	from {
+		text-shadow: 0 0 5px var(--accent-color);
+	}
+	to {
+		text-shadow: 0 0 20px var(--accent-color);
+	}
+}
+
