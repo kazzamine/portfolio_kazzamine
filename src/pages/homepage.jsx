@@ -13,14 +13,10 @@ import {
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Article from "../components/homepage/article";
-import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import TechSlider from "../components/homepage/TechSlider";
-import technologies from "../data/technologies";
 
 import "./styles/homepage.css";
 import SkillsSlider from "../components/homepage/SkillsSlider";
