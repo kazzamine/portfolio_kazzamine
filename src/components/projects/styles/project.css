@@ -12,10 +12,12 @@
 }
 
 .project:hover {
-	background: #fafafa;
+	background: #1a1a1a; /* dark hover */
 	opacity: 1;
-	transition: background-color 0.3s ease-in-out;
+	box-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--accent-color);
+	transition: all 0.3s ease-in-out;
 }
+
 
 .project:hover .project-link {
 	color: var(--link-color);

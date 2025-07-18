@@ -1,0 +1,27 @@
+.tech-category {
+	margin-top: 50px;
+}
+
+.tech-title {
+	color: var(--primary-color);
+	font-size: 20px;
+	margin-bottom: 15px;
+	text-shadow: 0 0 6px var(--primary-color);
+}
+
+.tech-swiper {
+	padding-bottom: 30px;
+}
+
+.tech-slide {
+	background: rgba(255, 255, 255, 0.08);
+	backdrop-filter: blur(10px);
+	padding: 12px 20px;
+	border-radius: 12px;
+	font-weight: bold;
+	font-size: 16px;
+	color: var(--accent-color);
+	box-shadow: 0 0 10px rgba(0, 255, 255, 0.15);
+	width: fit-content;
+	display: inline-block;
+}
