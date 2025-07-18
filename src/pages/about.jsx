@@ -10,6 +10,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/about.css";
+import Experience from "../components/about/Experience";
 
 const About = () => {
 	useEffect(() => {
@@ -69,6 +70,8 @@ const About = () => {
 						<div className="about-socials-mobile">
 							<Socials />
 						</div>
+						<Experience />
+
 					</div>
 					<div className="page-footer">
 						<Footer />

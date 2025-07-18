@@ -24,10 +24,11 @@ const NavBar = () => {
 							</NavLink>
 						</li>
 						<li className="nav-item">
-							<NavLink to="/articles" activeclassname="active">
-								Articles
+							<NavLink to="/skills" activeclassname="active">
+								Skills
 							</NavLink>
 						</li>
+
 						<li className="nav-item">
 							<NavLink to="/contact" activeclassname="active">
 								Contact

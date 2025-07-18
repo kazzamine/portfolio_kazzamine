@@ -23,6 +23,7 @@ import TechSlider from "../components/homepage/TechSlider";
 import technologies from "../data/technologies";
 
 import "./styles/homepage.css";
+import SkillsSlider from "../components/homepage/SkillsSlider";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -133,19 +134,8 @@ const Homepage = () => {
 							<div className="homepage-projects">
 								<AllProjects />
 							</div>
-
-							<div className="homepage-after-title">
-								<div className="homepage-articles">
-									{technologies.map((group, index) => (
-		<TechSlider key={index} title={group.category} items={group.items} />
-	))}
-								</div>
-
-								<div className="homepage-works">
-									<Works />
-								</div>
-							</div>
-
+<SkillsSlider />
+						
 							<div className="page-footer">
 								<Footer />
 							</div>

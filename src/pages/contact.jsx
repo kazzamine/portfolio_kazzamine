@@ -57,11 +57,27 @@ const Contact = () => {
 
 					</div>
 
-					<div className="socials-container">
-						<div className="contact-socials">
-							<Socials />
-						</div>
-					</div>
+					<div className="contact-body-split">
+	<form className="contact-form">
+		<div className="form-group">
+			<label htmlFor="name">Name</label>
+			<input type="text" id="name" name="name" />
+		</div>
+		<div className="form-group">
+			<label htmlFor="email">Email</label>
+			<input type="email" id="email" name="email" />
+		</div>
+		<div className="form-group">
+			<label htmlFor="message">Message</label>
+			<textarea id="message" name="message" rows="5" />
+		</div>
+		<button type="submit" className="contact-submit">Send Message</button>
+	</form>
+
+	<div className="contact-socials-side">
+		<Socials />
+	</div>
+</div>
 
 					<div className="page-footer">
 						<Footer />

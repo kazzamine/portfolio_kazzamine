@@ -33,6 +33,11 @@ const SEO = [
 			"Feel free to reach out for collaboration, freelance work, or software development inquiries. Open to new opportunities and tech discussions.",
 		keywords: ["Contact developer", "Freelance Symfony", "Spring Boot developer", "React contact", "Vue.js developer"],
 	},
+	{
+		page: "skills",
+		description: "Technologies, tools, and workflows I work with.",
+		keywords: ["skills", "tech stack", "frontend", "backend", "devops"],
+	},
 ];
 
 export default SEO;

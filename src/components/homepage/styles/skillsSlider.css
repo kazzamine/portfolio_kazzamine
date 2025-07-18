@@ -1,0 +1,49 @@
+.skills-slider-wrapper {
+	width: 100%;
+	overflow: hidden;
+	padding: 1rem 0;
+}
+
+.skills-slider {
+	display: flex;
+	gap: 2rem;
+	overflow-x: scroll;
+	scroll-behavior: smooth;
+	padding: 1rem;
+	scrollbar-width: none; /* Firefox */
+}
+
+.skills-slider::-webkit-scrollbar {
+	display: none; /* Chrome, Safari */
+}
+
+.skills-card {
+	min-width: 300px;
+	background-color: #111;
+	border: 1px solid #0ff;
+	border-radius: 10px;
+	padding: 1rem;
+	box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+	color: #fff;
+}
+
+.skills-title {
+	color: #0ff;
+	font-size: 1.2rem;
+	margin-bottom: 0.5rem;
+}
+
+.skills-badges {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+.skill-badge {
+	background-color: magenta;
+	color: black;
+	padding: 0.4rem 0.8rem;
+	border-radius: 999px;
+	font-weight: bold;
+	font-size: 0.9rem;
+}

@@ -1,0 +1,53 @@
+.experience {
+	margin-top: 40px;
+}
+
+.experience-body {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.experience-item {
+	display: flex;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.02);
+	padding: 16px;
+	border-radius: 12px;
+	transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.experience-item:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.experience-image {
+	width: 60px;
+	height: 60px;
+	border-radius: 8px;
+	object-fit: contain;
+	margin-right: 20px;
+}
+
+.experience-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.experience-title {
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 4px;
+}
+
+.experience-role {
+	font-size: 16px;
+	color: #ccc;
+}
+
+.experience-duration {
+	font-size: 14px;
+	color: #888;
+}
